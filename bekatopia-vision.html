@@ -10,14 +10,13 @@
 
 <!-- Topbar -->
 <header>
-    <nav class="topbar">
-        <ul>
-            <li><a href="index.html" class="button startseite">Startseite</a></li>
-            <li><a href="bekatopia-vision.html" class="button active">Bekatopia als Vision</a></li>
-            <li><a href="geschichten.html" class="button virtuell">Geschichten aus Bekatopia</a></li>
-            <li><a href="impressum.html" class="button impressum">Impressum</a></li>
-        </ul>
-    </nav>
+    <div id="topbar"></div>
+    <script>
+        fetch('topbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('topbar').innerHTML = data);
+    </script>
+
 </header>
 
 <!-- Hauptbereich -->
