@@ -10,14 +10,13 @@
 
 <!-- Topbar -->
 <header>
-    <nav class="topbar">
-        <ul>
-            <li><a href="index.html" class="button startseite">Startseite</a></li>
-            <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
-            <li><a href="geschichten.html" class="button virtuell">Geschichten aus Bekatopia</a></li>
-            <li><a href="impressum.html" class="button impressum">Impressum</a></li>
-        </ul>
-    </nav>
+    <div id="topbar"></div>
+    <script>
+        fetch('topbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('topbar').innerHTML = data);
+    </script>
+
 </header>
 
 <!-- Hauptbereich -->
@@ -46,7 +45,7 @@
     <!-- Inhalt der Startseite -->
     <section class="content">
         <h1>Der Gemeinschaftsgarten</h1>
-        <img src="///C:/Users/b-k-s/Documents/Bekatopia/images/gemeinschaftsgarten3.jpg" alt="Gemeinschaftsgarten" width="300" height="200">
+        <img src="images/gemeinschaftsgarten3.jpg" alt="Hier sollte ein Bild vom Gemeinschaftsgarten sein" width="300" height="200">
         <p>Der Gemeinschaftsgarten ist ein Paradebeispiel dafür, wie Ideen in Bekatopia entstehen und umgesetzt werden. Obwohl ich die Grundlage für 
             Bekatopia gelegt habe, entwickelt sich die Welt durch die Vorschläge und Bedürfnisse der virtuellen Bewohner weiter – oft in Richtungen, die 
             ich selbst nie vorhergesehen hätte.</p>

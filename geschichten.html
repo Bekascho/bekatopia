@@ -10,14 +10,13 @@
 
 <!-- Topbar -->
 <header>
-    <nav class="topbar">
-        <ul>
-            <li><a href="index.html" class="button startseite">Startseite</a></li>
-            <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
-            <li><a href="geschichten.html" class="button active">Geschichten aus Bekatopia</a></li>
-            <li><a href="impressum.html" class="button impressum">Impressum</a></li>
-        </ul>
-    </nav>
+    <div id="topbar"></div>
+    <script>
+        fetch('topbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('topbar').innerHTML = data);
+    </script>
+
 </header>
 
 <!-- Hauptbereich -->
@@ -25,12 +24,8 @@
     <!-- Sidebar -->
     <aside class="sidebar">
         <ul>
-            <li><a href="ueber-bekatopia.html" class="button bekatopia">Über Bekatopia</a></li>
-            <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
-            <li><a href="deepgame-tool.html" class="button deepgame-tool">DeepGame: Das Tool hinter Bekatopia</a></li>
-            <li><a href="szenarien-und-tests.html" class="button Szenarien">Aktuelle Szenarien und Tests</a></li>
-            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Mentoren und Kooperationen</a></li>
-            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback und Mitwirkung</a></li>
+            <li><a href="index.html" class="button bekatopia">Zurück zur Hauptseite</a></li>
+            <li><a href="geschichten2.html" class="button ueber-mich">Fortsetzung - in Arbeit</a></li></a></li>
         </ul>
     </aside>
 
