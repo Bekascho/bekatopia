@@ -1,0 +1,166 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px !important;
+    margin-top: -60px;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    z-index: 1000;
+}
+
+.topbar ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 60;
+    margin-top: 0;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+}
+
+.topbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+.startseite {
+    background-color: #3b82f6; /* Mittelblau für Startseite */
+    margin-left: 10px;
+}
+
+.vision {
+    background-color: #93c5fd; /* Hellblau für Vision */
+    margin-left: 0px;
+    padding: 25px;
+    left: 10px;
+}
+
+.virtuell {
+    background-color: #1e40af; /* Dunkelblau für virtuelle Welt */
+    color: rgb(199, 217, 232);
+    left: 10px;
+    padding: 15px;
+    left: 10px;
+}
+
+.impressum {
+    background-color: #1d4ed8; /* Ein etwas kräftigeres Blau für Impressum */
+    position: relative;
+    left: 10px;
+}
+
+.button:hover {
+    opacity: 0.8; /* Visueller Effekt beim Hover */
+}
+
+.button:active {
+    opacity: 1.9;
+    color: #243350;
+}
+.button.active {
+    color: black !important; /* Schriftfarbe dauerhaft schwarz */
+}
+
+.main-content {
+    background-color: #3b82f6;
+    display: flex; /* Flexbox aktiviert */
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 360px;
+    margin-bottom: 40px;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex; /* Flexbox aktiviert */;
+    flex: 1;
+    border-radius: 5px;
+    top: 60px;
+    left: 0;
+    height: 70%; /* Damit die Sidebar die gesamte Höhe des Viewports einnimmt */
+    width: 350px; /* Breite der Sidebar */
+    color: whitesmoke;
+    background-color: #3b82f6; /* Optional: Hintergrundfarbe */
+    overflow-y: auto; /* Falls die Liste länger wird, füge Scrollbars hinzu */
+    padding: 10px; /* Optional: Innenabstand */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional: leichter Schatteneffekt */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    overflow-y: auto; /* Falls die Liste länger wird, füge Scrollbars hinzu */
+}
+
+.sidebar li {
+    margin: 5px 0;
+    color: white;
+    overflow-y: auto; /* Falls die Liste länger wird, füge Scrollbars hinzu */
+}
+
+.sidebar ul li a {
+    color: white; /* Standardfarbe für alle Links */
+    text-decoration: none; /* Keine Unterstreichung */
+    padding: 10px;
+    display: block; /* Der gesamte Bereich des Links wird klickbar */
+    border-radius: 4px;
+    overflow-y: auto; /* Falls die Liste länger wird, füge Scrollbars hinzu */
+}
+
+.sidebar ul li a:hover {
+    background-color: #555; /* Leichter Hover-Effekt */
+    overflow-y: auto; /* Falls die Liste länger wird, füge Scrollbars hinzu */
+}
+
+.sidebar ul li a.active {
+    font-weight: bold; /* Hebt den aktiven Link hervor */
+    color: white; /* Stellt sicher, dass die Schriftfarbe immer weiß ist */
+    background-color: #243350; /* Dunkler Hintergrund für den aktiven Link */
+    border-radius: 2px;
+    overflow-y: auto; /* Falls die Liste länger wird, füge Scrollbars hinzu */
+}
+/* Stile für Unterpunkte */
+.sidebar ul li ul {
+    list-style: none;
+    padding-left: 20px; /* Einrückung für Unterpunkte */
+    margin: 0;
+}
+
+.sidebar ul li ul li {
+    margin-bottom: 3px; /* Etwas geringerer Abstand für Unterpunkte */
+}
+
+.sidebar ul li ul li a {
+    text-align: left; /* Unterpunkte ebenfalls links ausrichten */
+    padding: 8px 12px; /* Etwas kleinere Abstände für Unterpunkte */
+}
+
+.content {
+    flex: 1; /* Der Content nimmt den restlichen Platz ein */
+    padding: 15px;
+    left: 10px;
+}
+
+footer {
+    background-color: #1e3a8a; /* Dunkelblau für Footer */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
