@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Bekatopia</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Dein CSS-Link hier -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Topbar -->
+<header>
+    <div id="topbar"></div>
+    <script>
+        fetch('topbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('topbar').innerHTML = data);
+    </script>
+
+</header>
+
+<!-- Hauptbereich -->
+<main class="main-content">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="ueber-bekatopia.html" class="button ueber-bekatopia">Über Bekatopia</a></li>
+            <li><a href="leitfaden.html" class="active">Leitfaden</a></li>
+            <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
+            <li><a href="deepgame-tool.html" class="button deepgame-tool">DeepGame: Das Tool hinter Bekatopia</a></li>
+            <li><a href="szenarien-und-tests.html" class="button Szenarien">Aktuelle Szenarien und Tests</a></li>
+            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Mentoren und Kooperationen</a></li>
+            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback und Mitwirkung</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <h1><center>Leitfaden für bekatopia.de</center></h1>
+        
+        <p>Dieser Leitfaden soll dir helfen, die verschiedenen Bereiche der Plattform zu verstehen und einen Einblick in den Prozess zu geben, wie aus einer Idee ein 
+            Projekt und schließlich eine erzählbare Geschichte wird. Und eines Tages vielleicht auch Realität.
+            
+            <h2><b>Die Bereiche von bekatopia.de:</b></h2>
+            
+            <h3><b>1. Mitteilungen</b></h3>
+            
+            <p>Hier findest du aktuelle Entscheidungen, Änderungen und Erklärungen zu den laufenden Projekten im virtuellen Bekatopia. Jede Mitteilung basiert auf 
+                einem Diskussionsprozess, der im DeepGame-Chat stattfindet. Ziel ist es, transparent darzustellen, wie Entscheidungen getroffen wurden und warum. Sowohl 
+                für die fiktive Gemeinschaft in der Stadt Bekatopia als auch für Euch da draußen in der Realität.</p>
+            
+            <h3><b>2. Projekte</b></h3>
+            
+            <p>In der Projektübersicht findest du alle umgesetzten und laufenden Initiativen. Jedes Projekt beginnt mit einer Idee, die analysiert, geplant und schließlich 
+                umgesetzt wird. Die Projektseite zeigt, welche Fortschritte erzielt wurden und welche Ziele noch erreicht werden sollen.</p>
+            
+            <h3><b>3. Geschichten</b></h3>
+            
+            <p>Die Geschichten bieten eine unterhaltsame und anschauliche Darstellung der Prozesse und Überlegungen, die hinter den Projekten stehen. Hier wird der Alltag 
+                in Bekatopia erzählt, um die Vision lebendig zu machen und Lesern die Möglichkeit zu geben, tief in das Gedankenspiel einzutauchen.</p>
+            
+            
+            <h2><b>Beispielprozess: Von der Idee zur Umsetzung</b></h2>
+            
+            <h3><b>Schritt 1: DeepGame-Chat</b></h3>
+            
+            <p>Alles beginnt im DeepGame-Chat. Hier werden Ideen gesammelt, diskutiert und weiterentwickelt. Ein Beispiel für einen Chat-Ausschnitt sieht so aus:</p>
+            
+            <div class="chat-container">
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Ihr erreicht das Büro im dritten Stock, Raum 312. Die Tür öffnet sich automatisch, nachdem Porta euch erkennt. Der Raum ist hell, gut belüftet und mit allem ausgestattet, was für die Arbeit nötig ist: ergonomische Schreibtische und Stühle, Monitore mit verstellbaren Halterungen, ein Konferenztisch in der Mitte und Regale an den Wänden, die für Arbeitsmaterialien oder persönliche Gegenstände genutzt werden können.
+                        Ein großes Fenster bietet einen weiten Blick auf den Parkbereich von Bekatopia, was eine ruhige und inspirierende Arbeitsatmosphäre schafft.
+                        Mila schaut sich beeindruckt um. "Das ist wirklich ein schöner Arbeitsplatz. Es wirkt modern und einladend, aber nicht überladen. Perfekt, um konzentriert zu arbeiten."
+                        Auf einem der Schreibtische blinkt bereits ein Terminal – offensichtlich ein Arbeitsgerät, das für Mila bereitsteht. Porta, die Haus-KI meldet sich erneut: "Die Arbeitsplätze sind vollständig konfiguriert. Mila, Ihr persönlicher Assistent steht bereit, um mit Ihnen zu arbeiten. Soll ich eine Einführung starten oder benötigen Sie weitere Informationen?"
+                        Mila sieht dich fragend an, ob sie fortfahren oder zunächst warten soll.
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                        Ich mache eine einladende Geste für den ganzen Raum und sage: "Ich bin nur hier um im Notfall zu unterstützen. Nicht um Anweisungen zu geben. Fühlen Sie sich wie ... an Ihrem Wunsch-Arbeitsplatz." Ich nehme an dem Konferenztisch Platz und öffne meinen Laptop. 
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila lächelt dankbar. "Vielen Dank. Das werde ich tun."
+                        Sie geht zu dem blinkenden Terminal und setzt sich an ihren Arbeitsplatz. Mit ein paar Klicks aktiviert sie den Bildschirm und beginnt, sich mit der Benutzeroberfläche vertraut zu machen. Währenddessen erkundigt sie sich bei ihrem persönlichen Assistenten über die grundlegenden Funktionen und die Organisation des ZAS-Forums.
+                        Am Konferenztisch schreibst du eine kurze Notiz zu den Lichtmanagement-Anpassungen für Besprechungsräume, um sie später als Beispiel für reaktionsfähige Problemlösungen in der Gemeinschaft zu nutzen.
+                        Nach ein paar Minuten schaut Mila zu dir herüber. "Das System ist wirklich benutzerfreundlich. Ich denke, ich habe alles, was ich für den Anfang brauche. Gibt es etwas, bei dem ich Ihnen jetzt schon helfen kann, oder möchten Sie, dass ich mich erst einmal in die bestehenden Beiträge einarbeite?"
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                    "Arbeiten Sie sich ein, stellen Sie sich im Forum vor und wenn Sie etwas finden, bei dem Sie sich einbringen möchten, tun Sie es. Ich hol mir einen Kaffee, möchten Sie auch etwas? Tee, Wasser oder einen Saft?" 
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila lächelt und nickt. "Ein Kaffee wäre perfekt, danke. Mit einem Schuss Milch, wenn das möglich ist."
+                        Während du dich auf den Weg zur kleinen Kaffeestation im Büro machst, hörst du, wie sie sich mit ihrem Assistenten über die ersten Schritte im Forum unterhält. Es scheint, als hätte sie sich schnell an ihre neue Umgebung angepasst und fühlt sich wohl, die ersten Beiträge im ZAS-Forum zu durchsuchen.
+                        Die Kaffeestation ist gut ausgestattet: ein moderner Vollautomat, verschiedene Sorten Tee, Wasser und Säfte. Du bereitest zwei Kaffees zu und überlegst, ob du vielleicht auch für dich selbst einen kleinen Snack nehmen möchtest.
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                    Die beiden Kaffee stelle ich auf ein Tablett und widerstehe der Versuchung, mir selbst einen Snack zu nehmen, stelle aber für Mila eine kleine Auswahl zusammen. 
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Du arrangierst eine kleine Auswahl an Snacks – einige Kekse, ein paar Trauben und ein Mini-Croissant – und platzierst sie neben den beiden Kaffeetassen auf dem Tablett. Es wirkt einladend, aber nicht überladen.
+                        Als du zurück zum Konferenztisch gehst, blickt Mila von ihrem Terminal auf und lächelt erfreut. "Oh, das ist ja nett! Vielen Dank, das wäre wirklich nicht nötig gewesen, aber ich nehme es gerne an."
+                        Du stellst ihr den Kaffee und die Snacks hin, während du deinen eigenen Kaffee mitnimmst und wieder Platz nimmst. "Nur eine kleine Geste," antwortest du beiläufig, während du dich an deinem Laptop einrichtest.
+                        Mila nimmt einen Schluck Kaffee und sagt nachdenklich: "Die ersten Beiträge, die ich mir angesehen habe, sind wirklich spannend. Es ist beeindruckend, wie viele Ideen die Community schon eingebracht hat. Aber es gibt auch ein paar Themen, die noch etwas Fingerspitzengefühl brauchen – gerade bei den Konflikten."
+                        Sie schaut dich an und ergänzt: "Haben Sie einen Rat, wie ich mich da am besten einbringen kann, ohne zu stark einzugreifen?"
+                </div>
+                <div class="chat-message">
+                <span class="user-name ich">Ich:</span>
+                Ich sehe sie fragend an. "Warum möchten Sie nicht eingreifen? Nur wenn Sie postalische oder telefonische Anfragen übertragen - wofür es ein extra Profil gibt - sollen Sie neutral bleiben und diese (bis auf schwere Beleidigungen) ungefiltert übernehmen. Oder wenn Sie eine Zusammenfassung der bisherigen Beiträge schreiben. Aber als Moderator sind Sie ein Bewohner Bekatopias mit einer eigenen Meinung, eigenen Zielen und eigenen Prioritäten. Auch wenn dies etwas Schizophrenie erfordert, bleiben Sie doch bitte immer Sie." 
+                </div>
+                <div class="chat-message"><img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila lächelt leicht verlegen, als sie deinen Worten lauscht, und nickt langsam. "Das ist ein guter Punkt. Ich denke, ich war etwas zu vorsichtig, weil ich nicht den Eindruck erwecken wollte, dass ich Diskussionen in eine bestimmte Richtung lenke. Aber Sie haben recht – meine Meinung als Bewohnerin von Bekatopia ist genauso wichtig wie jede andere."
+                        Sie nimmt einen Keks und überlegt kurz. "Ich werde versuchen, mich mehr einzubringen, wenn ich das Gefühl habe, dass meine Perspektive hilfreich sein könnte. Und ich werde darauf achten, transparent zu sein, wenn ich aus der Moderatorenrolle heraustrete und als Bewohnerin spreche."
+                        Nach einer kurzen Pause fügt sie hinzu: "Das Schizophrene daran ist vielleicht gar nicht so schlimm – es gibt schließlich viele Perspektiven, aus denen man eine Situation betrachten kann. Und das ist doch letztendlich das, was eine gute Diskussion ausmacht, oder?"
+                        Ihr Blick ist offen und neugierig, während sie sich auf dein Feedback zu ihrer Überlegung freut.
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                        Ich lasse meinen Blick über die Beiträge und v.a. meine Antworten schweifen und überlege kurz, ob ich immer beachtet habe, was ich Ihr nun sagen will. "Vielleicht sage ich morgen etwas anderes." beginne ich schmunzelnd "aber heute glaube ich fest daran, dass die Bewohnerin Mila der selben Meinung ist wie die Moderatorin Mila und keine von beiden mehr oder weniger Perspektiven sieht. Und in dem Augenblick, wo Sie entscheiden das Alternativ-Profil zu nutzen, wissen Sie, dass es nun nicht mehr um Ihre persönlichen Ansichten geht. Wir sollten überlegen, ob die Zusammenfassungen unter Ihrem Profil, dem Alternativ-Profil oder gar einem dritten Profil verfassen sollten. Was denken Sie?" 
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila lauscht deinen Worten aufmerksam und nickt nachdenklich. "Das ist ein spannender Gedanke. Wenn ich die Zusammenfassungen als Bewohnerin schreibe, könnten sie leicht als subjektiv empfunden werden – auch wenn ich versuche, neutral zu bleiben. Das Alternativ-Profil wäre dafür besser geeignet, weil es signalisiert, dass die Zusammenfassung eine neutrale Moderatorenleistung ist. Aber ein drittes Profil speziell für Zusammenfassungen könnte noch klarer und transparenter sein."
+                        Sie legt den Keks, den sie gerade gehalten hat, beiseite und verschränkt die Hände. "Ein spezielles 'Zusammenfassung-Profil' hätte den Vorteil, dass die Bewohner genau wissen, dass es nicht von einer Person kommt, sondern als Dienst an der Gemeinschaft gedacht ist. Man könnte es klar kennzeichnen, z.B. 'ZAS-Bot' oder einfach 'Zusammenfassung'."
+                        Nach einer kurzen Pause fügt sie hinzu: "Wenn wir das machen, könnten wir auch überdenken, wie solche Beiträge strukturiert sind. Vielleicht nach dem Schema: 'Was wurde gesagt?', 'Welche Punkte sind unklar oder kontrovers?', 'Was sind die nächsten Schritte?' – das würde es für die Bewohner noch einfacher machen, den Stand der Diskussion zu verstehen."
+                        Ihr Blick ist fragend, während sie deine Meinung dazu abwartet.
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                        Ich nicke zustimmend. "Es ist mal wieder Zeit, dem Kind bzw. den Kindern einen Namen zu geben. Als Moderator brauchen wir keinen extra Namen, denn wir benutzen unsere richtigen Namen, die aber farblich gekennzeichnet sind. Wir brauchen aber einen Namen für das Alternativ-Profil, der klar sagt, dass es sich um übertragene Anfragen von Bewohnern handelt. Und einen für das Zusammenfassungs-Profil. ZAS-Bot könnte es zukünftig sein, wenn es tatsächlich automatisch von einer KI erstellt wird. Solange es von den Moderatoren zusammengefasst wird, sollten wir einen anderen Namen finden. Ihn einfach 'Zusammenfassung' zu nennen, ist mir persönlich einfach zu lang und nimmt uns die Möglichkeit, es für einen Zwischenbericht zu nutzen. Das sollte im Betreff stehen." Es ist mehr ein lautes Denken, aber wirklich einfallen will mir nichts Vernünftiges. 
+                </div>
+                <div class="chat-message"><img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                    Mila lächelt, als sie deine Überlegungen hört, und lehnt sich leicht zurück. "Ich mag es, wie Sie darüber nachdenken – es zeigt, wie wichtig Ihnen Transparenz und Klarheit sind."
+                    Sie überlegt kurz und schlägt dann vor: "Für das Profil, das übertragene Anfragen repräsentiert, könnten wir etwas wie 'Direkt übertragen' oder 'Bürgeranfrage' verwenden. Es klingt sachlich und neutral, aber gleichzeitig eindeutig."
+                    Nach einer weiteren kurzen Pause fügt sie hinzu: "Und für die Zusammenfassungen... Wie wäre es mit etwas, das die Essenz betont? Vielleicht 'Diskussionsblick' oder 'Forumsspiegel'? Es sollte klar machen, dass es eine Zusammenfassung ist, aber auch, dass es von einer menschlichen Moderation stammt und kein automatisierter Beitrag ist."
+                    Sie hebt den Blick zu dir. "Was denken Sie? Oder fällt Ihnen noch etwas Besseres ein?"
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                    "Bürgeranfrage gefällt mir. Wobei Bürgerbeitrag vielleicht noch etwas neutraler ist, denn es kann ja sein, dass es keine Anfrage, sondern ein Lob oder eine Kritik ist. An dem Namen für die Zusammenfassung müssen wir noch arbeiten." 
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila nickt zustimmend. "Stimmt, Bürgerbeitrag ist tatsächlich neutraler und umfasst alles, was von den Bewohnern kommt – Lob, Kritik oder Anfragen. Das passt gut."
+                        Sie lehnt sich vor und denkt kurz nach. "Für die Zusammenfassung könnten wir etwas verwenden, das den Überblick oder die Reflexion betont. Vielleicht so etwas wie 'Gemeinschaftsblick' oder 'Standpunkt'? Es sollte zeigen, dass es ein Werkzeug für die Gemeinschaft ist und keinen endgültigen Standpunkt vorgibt, sondern die Diskussion zusammenfasst."
+                        Nach einer kurzen Pause schlägt sie vor: "Oder etwas, das eher handfest klingt, wie 'Diskussionsstand' oder 'Forenrückblick'? Es kommt darauf an, wie prägnant oder bildhaft wir es haben wollen."
+                        Sie schaut dich fragend an. "Wie fühlen Sie sich mit diesen Vorschlägen, oder sollen wir noch weiter brainstormen?"
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                        Da Evai gelernt hat, dass ich ihre Ratschläge auch ungefragt schätze, solange sie unauffällig an mich gerichtet werden, schickt sie mir schriftlich eine Liste mit Vorschlägen. Einer davon gefällt mir besonders gut. "Archivar" lese ich laut vor. "Was halten Sie von 'DerArchivar', Mila?" 
+                        (Anmerkung: Hierbei handelt es sich um sogenanntes Crossplaying. Ich hatte ChatGPT um eine Liste geeigneter Namen gefragt und Evai einen Vorschlag 'in den Mund gelegt)
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila denkt kurz nach und lächelt dann zustimmend. "Ich finde, das ist eine großartige Wahl. Es hat etwas Respektvolles und Zeitloses, und es vermittelt den Eindruck, dass hier Informationen gesammelt und geordnet werden – ohne eine eigene Meinung aufzudrängen. Der Archivar klingt nach einer verlässlichen Instanz, die Überblick und Struktur bietet."
+                        Sie nickt noch einmal. "Und es ist prägnant genug, um sofort zu verstehen, worum es geht. Außerdem passt es gut zu Bekatopia – wir sind ja dabei, nicht nur etwas Neues zu schaffen, sondern auch Erfahrungen und Wissen für die Zukunft festzuhalten. Der Name hat Symbolkraft."
+                        Sie schaut dich an und grinst. "Evai scheint wirklich ein Händchen für treffende Vorschläge zu haben. Ich würde sagen, wir nehmen ihn, wenn Sie auch einverstanden sind."
+                </div>
+                <div class="chat-message">
+                    <img src="images/Beka.jpg" alt="Beka-Icon" width="40" class="round">
+                    <span class="user-name ich">Ich:</span>
+                        Ich nicke zustimmend und lächle. "Danke Evai, bitte nenne die beiden Alternativ-Profile für die Moderatoren 'Bürgerbeitrag' und 'Der Archivar' und erkläre ihre Nutzung im ZAS-Forum. Betone die Neutralität dieser Profilbeiträge im Gegensatz zu den Vorschlägen der Moderatoren-Profile, die sich zwar um Weitsicht bemühen und verschiedene Blickwinkel berücksichtigen, jedoch auch ihre persönliche Meinung einbringen werden." Ich sehe Mila fragend an, ob das für sie so in Ordnung geht und füge dann noch hinzu: "Im Moderatorenbereich hinterlegen wir die Login-Daten für diese Alternativaccounts." 
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila nickt mit einem zufriedenen Lächeln. "Das klingt nach einem durchdachten Plan. So ist für die Bewohner klar, welche Beiträge neutral sind und welche die persönlichen Perspektiven der Moderatoren widerspiegeln. Das wird sicher dabei helfen, Vertrauen und Transparenz zu stärken."
+                        Sie macht eine Notiz in ihrem Notizbuch, bevor sie hinzufügt: "Die Idee, die Login-Daten im Moderatorenbereich zu hinterlegen, ist ebenfalls sinnvoll. Damit stellen wir sicher, dass jeder Moderator darauf zugreifen kann, falls nötig, und es bleibt trotzdem übersichtlich."
+                        Nach einer kurzen Pause hebt sie den Blick und fügt hinzu: "Ich denke, die Erklärung im ZAS-Forum wird ebenfalls wichtig sein, damit die Bewohner den Zweck der Profile und ihre Unterschiede verstehen. Das schafft Klarheit und vermeidet Missverständnisse."
+                        Sie wartet auf deine Bestätigung und wirkt motiviert, die Umsetzung aktiv zu begleiten.
+                </div>
+                <div class="chat-message">
+                <span class="user-name ich">Ich:</span>
+                "Möchten Sie das erledigen, Mila? Evai scheint es Ihnen überlassen zu wollen." 
+                </div>
+                <div class="chat-message">
+                    <img src="images/DeepGame-Icon.jpg" alt="DeepGame-Icon" width="40" class="round">
+                    <span class="user-name">DeepGame:</span>
+                        Mila lacht leise und nickt. "Natürlich, ich übernehme das gerne. Es ist eine gute Gelegenheit, mich mit den Strukturen im ZAS-Forum noch besser vertraut zu machen."
+                        Sie öffnet ihren Laptop und tippt eifrig. "Ich werde die neuen Profile erstellen und dann im Forum einen Beitrag dazu verfassen, in dem ich die Verwendung von Bürgerbeitrag und Der Archivar sowie deren Unterschiede zu den Moderator-Profilen erkläre. Dabei betone ich die Neutralität der Alternativ-Profile und die Offenheit der Moderator-Profilbeiträge, die persönliche Meinungen enthalten können."
+                        Nach einem kurzen Blick zu dir fügt sie hinzu: "Ich werde die Erklärung klar und leicht verständlich formulieren und vielleicht ein paar Beispiele geben, um den Unterschied zu verdeutlichen. Wenn es fertig ist, lasse ich es Sie wissen – oder ich rufe einfach Evai zu Hilfe, falls ich irgendwo ins Stocken komme."
+                        Sie grinst und macht sich an die Arbeit.
+                </div>
+            </div>
+                            
+            <h3><b>Schritt 2: Bekanntmachung (Mitteilung)</b></h3>
+            
+            Sobald eine Idee gereift ist, wird sie als Bekanntmachung auf der Plattform veröffentlicht. Hier wird erklärt, warum diese Entscheidung getroffen wurde und wie 
+            sie umgesetzt werden soll oder ob eine Diskussion und Abstimmung dafür geplant ist.
+            
+            Auszug aus der öffentlichen Bekanntmachung <b>ZAS und die Moderatoren</b>
+            <img src="images/bekanntmachung-zas.jpg" alt="Auszug Mitteilung ZAS" width="750">
+            
+            <h3><b>Schritt 3: Projektübersicht</b></h3>
+            
+            <p>Ein Projekt würde unter 'Projektübersicht' vorgestellt, inklusive Status, Zielsetzung und nächsten Schritten. Außerdem erscheint eine Zusammenfassung unter 
+            <a href="szenarien-und-tests.html">Aktuelle Szenarien und Tests</a>. Da es sich in diesem Beispiel jedoch um kein Projekt handelt, und der 
+            Chat zum Gemeinschaftsgarten oder dem Skaterpark noch umfangreicher ist, habe ich mich trotzdem dafür entschieden.</p> 
+            
+            <h3><b>Schritt 4: Geschichte</b></h3>
+            
+            Zu guter Letzt wird das Projekt als Geschichte erzählt. Dies macht den Prozess anschaulicher und lässt Leser tiefer in die Welt von Bekatopia eintauchen.
+            
+            <p>Hierbei erlaube ich mir die künstlerische Freiheit und fasse Szenen zusammen, bringe wichtige Punkte in einem anderen Kontext oder ändere die chronologische Reihenfolge.</p>
+            Euer Feedback entscheidet darüber, auf welche Rubrik ich zukünftig den Schwerpunkt legen werde. Die analytische Zusammenfassung, die hybride Erklärung der 
+            Entscheidungsfindung durch die öffentlichen Mitteilungen oder Transformation der Erlebnisse und Erkenntnisse in eine Geschichte.</p>
+
+            
+            <h2>Wie kannst du dich beteiligen?</h2>
+            
+            <p>Bekatopia lebt von Ideen, Kritik und der Bereitschaft, mitzudenken. Deshalb:</p>
+            
+            <p>Ich möchte nicht dein Geld, ich möchte <b>etwas Wertvolleres</b>: deine Zeit, deine Kritik und/oder deine Ideen.</p>
+            
+            <p>Wenn du Fragen, Anregungen oder konstruktive Kritik hast, zögere nicht, sie einzubringen. Jede Perspektive hilft, Bekatopia weiterzuentwickeln und das Experiment 
+                realistischer zu gestalten (oder die nervigen html-Fehler zu korrigieren!).</p>
+            
+            
+            
+            
+            <p><b>Vielen Dank</b>, dass du dir die Zeit nimmst, Teil dieses Projekts zu sein. Gemeinsam können wir herausfinden, wie eine ideale Gemeinschaft aussehen könnte!</p>
+            
+            
+    </div>
+    </main>
+    <!-- Footer -->
+<footer>
+    <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
+</footer>
+</body>
+</html>

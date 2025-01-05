@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Bekatopia - die Vision</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Dein CSS-Link hier -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- Topbar -->
+<header>
+    <div id="topbar"></div>
+    <script>
+        fetch('topbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('topbar').innerHTML = data);
+    </script>
+
+</header>
+
+<!-- Hauptbereich -->
+<main class="main-content">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html" class="button bekatopia">Zurück zur Hauptseite</a></li>
+            <li><a href="geschichten2.html" class="active">Fortsetzung - in Arbeit</a></li>
+        </ul>
+    </aside>
+
+    <!-- Inhalt der Hauptseite -->
+    <section class="virtuell">
+        <h1>Geschichten aus Bekatopia</h1>
+        <h3>(Nacherzählung der Geschichten, wie ich sie in der virtuellen Welt erlebt habe)</h3>
+        <h2>Woche 2</h2>
+        
+        <h3>Fortsetzung folgt</h3>
+        
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
+</footer>
+
+</body>
+</html>
