@@ -78,6 +78,14 @@ header {
     left: 10px;
 }
 
+.zas {
+    background-color: #1e40af; /* Dunkelblau für ZAS */
+    color: rgb(199, 217, 232);
+    left: 10px;
+    padding: 15px;
+    left: 10px;
+}
+
 .impressum {
     background-color: #1d4ed8; /* Ein etwas kräftigeres Blau für Impressum */
     position: relative;
