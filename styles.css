@@ -43,12 +43,13 @@ header {
 
 /* Navigation */
 .topbar {
+    overflow: hidden; /* Verhindert das Durchscrollen hinter der Topbar */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: whitesmoke;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(122, 183, 241, 0.1);
     z-index: 1000;
 }
 
@@ -148,7 +149,7 @@ header {
 }
 
 .impressum {
-    background-color: #1d4ed8;
+    background-color: #3b82f6;
     position: relative;
     left: 10px;
 }
@@ -170,8 +171,8 @@ header {
     background-color: #3b82f6;
     display: flex;
     padding: 20px;
-    margin-top: 60px;
-    margin-left: 360px;
+    margin-top: 70px;
+    margin-left: 32%;
     margin-bottom: 40px;
 }
 /* Sidebar auf großen Bildschirmen */
@@ -198,6 +199,7 @@ header {
     }
 
     .main-content {
+        padding-left: 0;
         margin-left: 0; /* Hauptinhalt nimmt die gesamte Breite ein */
     }
 }
