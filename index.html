@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    
     <div id="mobile-hint">
         Die Seite ist für große Bildschirme optimiert. Falls Du weißt, wie ich das Design für kleine Bildschirme (oder insgesamt) verbessern kann, freue ich mich über Hinweise! 
         <button onclick="hideHint()">Verstanden</button>
@@ -19,8 +20,11 @@
         fetch('topbar.html')
             .then(response => response.text())
             .then(data => document.getElementById('topbar').innerHTML = data);
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("show");
+    }
     </script>
-
 </header>
 
 <!-- Hauptbereich -->
