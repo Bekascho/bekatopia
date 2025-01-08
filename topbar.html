@@ -9,7 +9,9 @@
 <body>
     <div id="topbar">
         <nav class="topbar">
-            <ul>
+            <!-- Hamburger-Icon -->
+            <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+            <ul id="navbar">
                 <li><a href="index.html" class="button startseite">Startseite</a></li>
                 <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
                 <li><a href="geschichten.html" class="button virtuell">Geschichten aus Bekatopia</a></li>
@@ -18,5 +20,14 @@
             </ul>
         </nav>
     </div>
+
+    <!-- JavaScript für das Hamburger-Menü -->
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
+
