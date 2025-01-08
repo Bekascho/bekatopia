@@ -23,6 +23,10 @@
         function toggleMenu() {
             var navbar = document.getElementById("navbar");
             navbar.classList.toggle("show");
+        function toggleSidebar() {
+            var sidebarMenu = document.getElementById("sidebar-menu");
+            sidebarMenu.classList.toggle("show");
+    }
     }
     </script>
 </header>
@@ -31,7 +35,8 @@
 <main class="main-content">
     <!-- Sidebar -->
     <aside class="sidebar">
-        <ul>
+        <span class="menu-icon sidebar-icon" onclick="toggleSidebar()">&#9776; Sidebar</span>
+        <ul id="sidebar-menu">
             <li><a href="ueber-bekatopia.html" class="button bekatopia">Über Bekatopia</a></li>
             <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
             <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
