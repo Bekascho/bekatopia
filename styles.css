@@ -6,6 +6,15 @@ body {
     font-size: 16px; /* Standard-Stile für größere Bildschirme */
 }
 
+/* Links */
+a {
+    color: #ffffff; /* Weiß für besseren Kontrast */
+}
+
+a:hover {
+    color: #d1d5db; /* Hellgrau beim Hover */
+}
+
 /* Stile für Tablets */
 @media (max-width: 768px) {
     body {
@@ -125,7 +134,7 @@ header {
         width: 100%;
         background-color: #3b82f6;
         position: absolute;
-        top: 60px;
+        top: 70px;
         left: 0;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 1000;
@@ -141,7 +150,7 @@ header {
     background-color: #3b82f6;
     display: flex;
     padding: 20px;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 32%;
     margin-bottom: 40px;
 }
@@ -207,3 +216,11 @@ header {
 .button.active {
     color: black !important;
 }
+
+img {
+    max-width: 100%; /* Begrenze die Breite auf 100% des Containers */
+    height: auto; /* Erhalte das Seitenverhältnis */
+    display: block; /* Verhindere, dass Bilder als inline-block dargestellt werden */
+    margin: 0 auto; /* Zentriere die Bilder horizontal */
+}
+
