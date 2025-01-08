@@ -16,4 +16,4 @@ Diese Website ist gehostet über GitHub Pages und erreichbar unter:
 `https://<dein-github-username>.github.io/bekatopia/`
 
 ## Mitwirken
-Hast du Ideen oder Anregungen? Lass uns zusammenarbeiten! Weitere Informationen findest du in der Rubrik **Feedback und Mitwirkung**.
+Hast du Ideen oder Anregungen? Lass uns zusammenarbeiten! Vor allem im Bereich Web-Design benötige ich offensichtlich Hilfe.
