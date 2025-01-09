@@ -10,7 +10,7 @@
     <!-- Topbar -->
     <div id="topbar">
         <nav class="topbar">
-            <span class="menu-icon topbar-icon" onclick="toggleTopbarMenu()">&#9776;</span>
+            <span class="menu-icon topbar-icon">&#9776;</span>
             <ul id="topbar-nav">
                 <li><a href="index.html" class="button startseite">Startseite</a></li>
                 <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
@@ -39,11 +39,13 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Topbar-Menü
-            var topbarIcon = document.querySelector(".topbar-icon");
-            topbarIcon.addEventListener("click", function() {
-                var topbarNav = document.getElementById("topbar-nav");
-                topbarNav.classList.toggle("show-topbar");
-            });
+        // Event-Listener für den Topbar-Hamburger
+        document.querySelector(".topbar-icon").addEventListener("click", function() {
+            var topbarNav = document.getElementById("topbar-nav");
+            topbarNav.classList.toggle("show-topbar");
+
+        });
+
     
             // Sidebar-Menü
             var sidebarIcon = document.querySelector(".sidebar-icon");
