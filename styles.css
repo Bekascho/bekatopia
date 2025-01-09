@@ -85,12 +85,11 @@ header {
 /* Sidebar */
 .sidebar {
     position: fixed;
-    display: flex;
     border-radius: 5px;
     top: 60px;
     left: 0;
     min-height: 800px;
-    height: 70%;
+    height: 100%;
     width: 30%;
     color: whitesmoke;
     background-color: #3b82f6;
@@ -99,20 +98,7 @@ header {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Hamburger-Menü für die Sidebar */
-.sidebar-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-#sidebar-menu {
-    list-style-type: none;
-    padding: 0;
-    display: block;
-}
-
+/* Hamburger-Menü für die Sidebar nur auf kleinen Bildschirmen */
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -120,12 +106,11 @@ header {
 
     .sidebar {
         display: none;
+        width: 70%;
     }
 
-    .sidebar-icon {
+    .sidebar.show {
         display: block;
-        color: whitesmoke;
-        margin-left: 10px;
     }
 
     #sidebar-menu {
@@ -218,9 +203,8 @@ header {
 }
 
 img {
-    max-width: 100%; /* Begrenze die Breite auf 100% des Containers */
-    height: auto; /* Erhalte das Seitenverhältnis */
-    display: block; /* Verhindere, dass Bilder als inline-block dargestellt werden */
-    margin: 0 auto; /* Zentriere die Bilder horizontal */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
-

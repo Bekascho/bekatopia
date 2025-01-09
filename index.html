@@ -4,81 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
     <title>Bekatopia</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Dein CSS-Link hier -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
     <div id="mobile-hint">
         Die Seite ist für große Bildschirme optimiert. Falls Du weißt, wie ich das Design für kleine Bildschirme (oder insgesamt) verbessern kann, freue ich mich über Hinweise! 
         <button onclick="hideHint()">Verstanden</button>
     </div>
-<!-- Topbar -->
-<header style="top: 0%; left: 0%;">
-    <div id="topbar"></div>
+
+    <!-- Topbar -->
+    <header style="top: 0%; left: 0%;">
+        <div id="topbar"></div>
+        <script>
+            fetch('topbar.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('topbar').innerHTML = data);
+        </script>
+    </header>
+
+    <!-- Hauptbereich -->
+    <main class="main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar-menu">
+            <span class="menu-icon sidebar-icon" onclick="toggleSidebar()">&#9776; Sidebar</span>
+            <ul>
+                <li><a href="ueber-bekatopia.html" class="button bekatopia">Über Bekatopia</a></li>
+                <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
+                <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
+                <li><a href="deepgame-tool.html" class="button deepgame-tool">DeepGame: Das Tool hinter Bekatopia</a></li>
+                <li><a href="szenarien-und-tests.html" class="button Szenarien">Aktuelle Szenarien und Tests</a></li>
+                <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Mentoren und Kooperationen</a></li>
+                <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback und Mitwirkung</a></li>
+            </ul>
+        </aside>
+
+        <!-- Inhalt der Startseite -->
+        <section class="content">
+            <h1>Herzlich willkommen auf Bekatopia.de!</h1>
+
+            <p>Ich bin B.K. (Birgit Karin) und lade dich ein, meine Vision für eine zufriedenere, gerechtere und ressourcenschonende Gemeinschaft kennenzulernen:</p> 
+                
+            <img src="images/Ortsschild-Bekatopia3.jpg" alt="Ortsschild Bekatopia" width="450" height="300">
+            <p>Ich teste diese Idee mit Hilfe von <strong>DeepGame</strong>, einem interaktiven Rollenspiel, das von Utile Labs entwickelt wurde. DeepGame lässt 
+                mich die Welt von Bekatopia erschaffen und steuern und ermöglicht es mir, die Auswirkungen meiner Entscheidungen in einer virtuellen Umgebung zu 
+                beobachten. Dabei reagiert die Simulation dynamisch auf mein Handeln, bietet Vorschläge und fordert mich heraus, das Szenario weiterzuentwickeln.</p>
+            
+            <h2>Aktueller Stand von Bekatopia</h2>
+            <p>Derzeit arbeite ich daran, verschiedene Szenarien zu testen, die Bekatopia weiter verfeinern. DeepGame wurde inzwischen fast vollständig von ChatGPT ersetzt. 
+                Ich suche weiterhin nach Mentoren, Kritikern und neuen Ideen, die das Projekt bereichern oder das Design dieser Seite verbessern. Wenn du interessiert bist, 
+                dich einzubringen oder <a href="feedback-und-mitwirkung.html">Feedback</a> zu geben, freue ich mich auf deine Nachricht!</p>
+
+            <h2>Haben wir keine anderen Probleme?</h2>
+            <p>Doch, sogar viele! Aber genau deshalb möchte ich das Problem bei der Wurzel packen anstatt nur die Symptome zu bekämpfen. Auch ich habe Bedenken 
+                und Zweifel, ob wir es schaffen, aber ich habe auch Hoffnung. Denn ich habe schon fliegende Hummeln gesehen, aber noch nie kotzende Pferde!</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
+    </footer>
+    
     <script>
-        fetch('topbar.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('topbar').innerHTML = data);
-        function toggleMenu() {
-            var navbar = document.getElementById("navbar");
-            navbar.classList.toggle("show");
+        function hideHint() {
+            document.getElementById("mobile-hint").style.display = "none";
+        }
+
         function toggleSidebar() {
             var sidebarMenu = document.getElementById("sidebar-menu");
             sidebarMenu.classList.toggle("show");
-    }
-    }
+        }
     </script>
-</header>
-
-<!-- Hauptbereich -->
-<main class="main-content">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <span class="menu-icon sidebar-icon" onclick="toggleSidebar()">&#9776; Sidebar</span>
-        <ul id="sidebar-menu">
-            <li><a href="ueber-bekatopia.html" class="button bekatopia">Über Bekatopia</a></li>
-            <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
-            <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
-            <li><a href="deepgame-tool.html" class="button deepgame-tool">DeepGame: Das Tool hinter Bekatopia</a></li>
-            <li><a href="szenarien-und-tests.html" class="button Szenarien">Aktuelle Szenarien und Tests</a></li>
-            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Mentoren und Kooperationen</a></li>
-            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback und Mitwirkung</a></li>
-        </ul>
-    </aside>
-
-    <!-- Inhalt der Startseite -->
-    <section class="content">
-        
-        <h1>Herzlich willkommen auf Bekatopia.de!</h1>
-
-        <p>Ich bin B.K. (Birgit Karin) und lade dich ein, meine Vision für eine zufriedenere, gerechtere und ressourcenschonende Gemeinschaft kennenzulernen:</p> 
-            
-        <img src="images/Ortsschild-Bekatopia3.jpg" alt="Ortsschild Bekatopia" width="450" height="300">
-        <p>Ich teste diese Idee mit Hilfe von <strong>DeepGame</strong>, einem interaktiven Rollenspiel, das von Utile Labs entwickelt wurde. DeepGame lässt 
-            mich die Welt von Bekatopia erschaffen und steuern und ermöglicht es mir, die Auswirkungen meiner Entscheidungen in einer virtuellen Umgebung zu 
-            beobachten. Dabei reagiert die Simulation dynamisch auf mein Handeln, bietet Vorschläge und fordert mich heraus, das Szenario weiterzuentwickeln.</p>
-        
-        <h2>Aktueller Stand von Bekatopia</h2>
-        <p>Derzeit arbeite ich daran, verschiedene Szenarien zu testen, die Bekatopia weiter verfeinern. DeepGame wurde inzwischen fast vollständig von ChatGPT ersetzt. 
-            Ich suche weiterhin nach Mentoren, Kritikern und neuen Ideen, die das Projekt bereichern oder das Design dieser Seite verbessern. Wenn du interessiert bist, 
-            dich einzubringen oder <a href="feedback-und-mitwirkung.html">Feedback</a> zu geben, freue ich mich auf deine Nachricht!</p>
-
-        <h2>Haben wir keine anderen Probleme?</h2>
-        <p>Doch, sogar viele! Aber genau deshalb möchte ich das Problem bei der Wurzel packen anstatt nur die Symptome zu bekämpfen. Auch ich habe Bedenken 
-            und Zweifel, ob wir es schaffen, aber ich habe auch Hoffnung. Denn ich habe schon fliegende Hummeln gesehen, aber noch nie kotzende Pferde!</p>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
-</footer>
-<script>
-    function hideHint() {
-        document.getElementById("mobile-hint").style.display = "none";
-    }
-</script>
 
 </body>
 </html>
