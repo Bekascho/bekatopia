@@ -59,13 +59,13 @@
                     .then(data => {
                         document.getElementById('bars').innerHTML = data;
                         console.log("Topbar und Sidebar wurden geladen.");
-    
+        
                         // Event-Listener für den Topbar-Hamburger
                         document.querySelector(".topbar-icon").addEventListener("click", function() {
                             var topbarNav = document.getElementById("topbar-nav");
                             topbarNav.classList.toggle("show-topbar");
                         });
-    
+        
                         // Event-Listener für den Sidebar-Hamburger
                         document.querySelector(".sidebar-icon").addEventListener("click", function() {
                             var sidebarMenu = document.getElementById("sidebar-menu");
@@ -74,7 +74,7 @@
                     })
                     .catch(error => console.error("Fehler beim Laden der Bars:", error));
             }
-    
+        
             document.addEventListener("DOMContentLoaded", loadBars);
         </script>
     

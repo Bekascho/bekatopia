@@ -37,24 +37,23 @@
 
     <!-- JavaScript für das Hamburger-Menü -->
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        console.log("JavaScript wurde geladen und DOM ist bereit!");
-
-        // Event-Listener für den Topbar-Hamburger
-        document.querySelector(".topbar-icon").addEventListener("click", function() {
-            console.log("Topbar-Hamburger wurde geklickt");
-            var topbarNav = document.getElementById("topbar-nav");
-            topbarNav.classList.toggle("show-topbar");
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("JavaScript wurde geladen und DOM ist bereit!");
+    
+            // Event-Listener für den Topbar-Hamburger
+            document.querySelector(".topbar-icon").addEventListener("click", function() {
+                console.log("Topbar-Hamburger wurde geklickt");
+                var topbarNav = document.getElementById("topbar-nav");
+                topbarNav.classList.toggle("show-topbar");
+            });
+    
+            // Event-Listener für den Sidebar-Hamburger
+            document.querySelector(".sidebar-icon").addEventListener("click", function() {
+                console.log("Sidebar-Hamburger wurde geklickt");
+                var sidebarMenu = document.getElementById("sidebar-menu");
+                sidebarMenu.classList.toggle("show-sidebar");
+            });
         });
-
-        // Event-Listener für den Sidebar-Hamburger
-        document.querySelector(".sidebar-icon").addEventListener("click", function() {
-            console.log("Sidebar-Hamburger wurde geklickt");
-            var sidebarMenu = document.getElementById("sidebar-menu");
-            sidebarMenu.classList.toggle("show-sidebar");
-        });
-    });
-
     </script>
 </body>
 </html>

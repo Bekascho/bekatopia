@@ -101,7 +101,7 @@ header {
 /* Hamburger-Menü und mobile Ansicht */
 @media (max-width: 768px) {
     .hamburger-buttons {
-        display: flex;
+        display: flex; /* Sicherstellen, dass die Buttons sichtbar sind */
         justify-content: space-between;
         padding: 10px 20px;
         background-color: whitesmoke;
