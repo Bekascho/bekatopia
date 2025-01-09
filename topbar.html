@@ -9,7 +9,7 @@
 <body>
     <div id="topbar">
         <nav class="topbar">
-            <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+            <span class="menu-icon" onclick="toggleTopbarMenu()">&#9776;</span>
             <ul id="navbar">
                 <li><a href="index.html" class="button startseite">Startseite</a></li>
                 <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
@@ -20,11 +20,11 @@
         </nav>
     </div>
 
-    <!-- JavaScript für das Hamburger-Menü -->
+    <!-- JavaScript für das Hamburger-Menü der Topbar -->
     <script>
-        function toggleMenu() {
+        function toggleTopbarMenu() {
             var navbar = document.getElementById("navbar");
-            navbar.classList.toggle("show");
+            navbar.classList.toggle("show-menu");
         }
     </script>
 </body>
