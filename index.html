@@ -15,11 +15,6 @@
 
     <!-- Topbar und Sidebar -->
     <div id="bars"></div>
-    <script>
-        fetch('bars.html')
-            .then(response => response.text())
-        .then(data => document.getElementById('bars').innerHTML = data);
-</script>
 
     <!-- Hauptbereich -->
     <main class="main-content">
@@ -51,15 +46,30 @@
         <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
     </footer>
     
-    <script>
-        function hideHint() {
-            document.getElementById("mobile-hint").style.display = "none";
+     <script>
+        function loadBars() {
+            fetch('bars.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('bars').innerHTML = data;
+                    console.log("Topbar und Sidebar wurden geladen.");
+
+                    // Event-Listener für den Topbar-Hamburger
+                    document.querySelector(".topbar-icon").addEventListener("click", function() {
+                        var topbarNav = document.getElementById("topbar-nav");
+                        topbarNav.classList.toggle("show-topbar");
+                    });
+
+                    // Event-Listener für den Sidebar-Hamburger
+                    document.querySelector(".sidebar-icon").addEventListener("click", function() {
+                        var sidebarMenu = document.getElementById("sidebar-menu");
+                        sidebarMenu.classList.toggle("show-sidebar");
+                    });
+                })
+                .catch(error => console.error("Fehler beim Laden der Bars:", error));
         }
 
-        function toggleSidebar() {
-            var sidebarMenu = document.getElementById("sidebar-menu");
-            sidebarMenu.classList.toggle("show");
-        }
+        document.addEventListener("DOMContentLoaded", loadBars);
     </script>
 
 </body>
