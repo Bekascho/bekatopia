@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Topbar und Sidebar Fix</title>
+</head>
+<body>
+    <!-- Topbar -->
+    <div id="topbar">
+        <nav class="topbar">
+            <span class="menu-icon topbar-icon" onclick="toggleTopbarMenu()">&#9776;</span>
+            <ul id="topbar-nav">
+                <li><a href="index.html" class="button startseite">Startseite</a></li>
+                <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
+                <li><a href="geschichten.html" class="button virtuell">Geschichten aus Bekatopia</a></li>
+                <li><a href="zas.html" class="button zas">ZAS</a></li>
+                <li><a href="impressum.html" class="button impressum">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar-menu">
+        <span class="menu-icon sidebar-icon" onclick="toggleSidebarMenu()">&#9776; Sidebar</span>
+        <ul>
+            <li><a href="ueber-bekatopia.html" class="button ueber-bekatopia">Über Bekatopia</a></li>
+            <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
+            <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
+            <li><a href="deepgame-tool.html" class="button deepgame-tool">DeepGame: Das Tool hinter Bekatopia</a></li>
+            <li><a href="szenarien-und-tests.html" class="button Szenarien">Aktuelle Szenarien und Tests</a></li>
+            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Mentoren und Kooperationen</a></li>
+            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback und Mitwirkung</a></li>
+        </ul>
+    </aside>
+
+    <!-- JavaScript für das Hamburger-Menü -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function toggleTopbarMenu() {
+                var topbarNav = document.getElementById("topbar-nav");
+                topbarNav.classList.toggle("show-topbar");
+            }
+
+            function toggleSidebarMenu() {
+                var sidebarMenu = document.getElementById("sidebar-menu");
+                sidebarMenu.classList.toggle("show-sidebar");
+            }
+
+            // Event-Listener für die Buttons hinzufügen
+            document.querySelector(".topbar-icon").addEventListener("click", toggleTopbarMenu);
+            document.querySelector(".sidebar-icon").addEventListener("click", toggleSidebarMenu);
+        });
+    </script>
+</body>
+</html>
