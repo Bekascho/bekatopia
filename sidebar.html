@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sidebar</title>
+    <title>Topbar</title>
 </head>
 <body>
+    <div id="topbar">
+        <nav class="topbar">
+            <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+            <ul id="navbar">
+                <li><a href="index.html" class="button startseite">Startseite</a></li>
+                <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
+                <li><a href="geschichten.html" class="button virtuell">Geschichten aus Bekatopia</a></li>
+                <li><a href="zas.html" class="button zas">ZAS</a></li>
+                <li><a href="impressum.html" class="button impressum">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar-menu">
-        <span class="menu-icon sidebar-icon" onclick="toggleSidebar()">&#9776; Sidebar</span>
         <ul>
             <li><a href="ueber-bekatopia.html" class="button ueber-bekatopia">Über Bekatopia</a></li>
             <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
@@ -23,9 +35,20 @@
 
     <!-- JavaScript für das Hamburger-Menü -->
     <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("show");
+        }
+
         function toggleSidebar() {
             var sidebarMenu = document.getElementById("sidebar-menu");
-            sidebarMenu.classList.toggle("show");
+            if (sidebarMenu.classList.contains("show")) {
+                sidebarMenu.style.display = "none";
+                sidebarMenu.classList.remove("show");
+            } else {
+                sidebarMenu.style.display = "block";
+                sidebarMenu.classList.add("show");
+            }
         }
     </script>
 </body>
