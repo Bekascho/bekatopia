@@ -38,20 +38,21 @@
     <!-- JavaScript für das Hamburger-Menü -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            function toggleTopbarMenu() {
+            // Topbar-Menü
+            var topbarIcon = document.querySelector(".topbar-icon");
+            topbarIcon.addEventListener("click", function() {
                 var topbarNav = document.getElementById("topbar-nav");
                 topbarNav.classList.toggle("show-topbar");
-            }
-
-            function toggleSidebarMenu() {
+            });
+    
+            // Sidebar-Menü
+            var sidebarIcon = document.querySelector(".sidebar-icon");
+            sidebarIcon.addEventListener("click", function() {
                 var sidebarMenu = document.getElementById("sidebar-menu");
                 sidebarMenu.classList.toggle("show-sidebar");
-            }
-
-            // Event-Listener für die Buttons hinzufügen
-            document.querySelector(".topbar-icon").addEventListener("click", toggleTopbarMenu);
-            document.querySelector(".sidebar-icon").addEventListener("click", toggleSidebarMenu);
+            });
         });
     </script>
+    
 </body>
 </html>
