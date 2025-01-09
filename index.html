@@ -13,9 +13,14 @@
         <button onclick="hideHint()">Verstanden</button>
     </div>
 
-    <!-- Topbar und Sidebar -->
-    <div id="bars"></div>
+<!-- Platzhalter für Topbar und Sidebar -->
+<div id="bars"></div>
 
+<!-- Hamburger-Buttons für Topbar und Sidebar -->
+<div class="hamburger-buttons">
+    <span class="menu-icon topbar-icon">&#9776; Menü</span>
+    <span class="menu-icon sidebar-icon">&#9776; Sidebar</span>
+</div>
     <!-- Hauptbereich -->
     <main class="main-content">
 
@@ -46,31 +51,32 @@
         <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
     </footer>
     
-     <script>
-        function loadBars() {
-            fetch('bars.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('bars').innerHTML = data;
-                    console.log("Topbar und Sidebar wurden geladen.");
-
-                    // Event-Listener für den Topbar-Hamburger
-                    document.querySelector(".topbar-icon").addEventListener("click", function() {
-                        var topbarNav = document.getElementById("topbar-nav");
-                        topbarNav.classList.toggle("show-topbar");
-                    });
-
-                    // Event-Listener für den Sidebar-Hamburger
-                    document.querySelector(".sidebar-icon").addEventListener("click", function() {
-                        var sidebarMenu = document.getElementById("sidebar-menu");
-                        sidebarMenu.classList.toggle("show-sidebar");
-                    });
-                })
-                .catch(error => console.error("Fehler beim Laden der Bars:", error));
-        }
-
-        document.addEventListener("DOMContentLoaded", loadBars);
-    </script>
-
+        <!-- JavaScript zum Laden der Topbar und Sidebar -->
+        <script>
+            function loadBars() {
+                fetch('bars.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('bars').innerHTML = data;
+                        console.log("Topbar und Sidebar wurden geladen.");
+    
+                        // Event-Listener für den Topbar-Hamburger
+                        document.querySelector(".topbar-icon").addEventListener("click", function() {
+                            var topbarNav = document.getElementById("topbar-nav");
+                            topbarNav.classList.toggle("show-topbar");
+                        });
+    
+                        // Event-Listener für den Sidebar-Hamburger
+                        document.querySelector(".sidebar-icon").addEventListener("click", function() {
+                            var sidebarMenu = document.getElementById("sidebar-menu");
+                            sidebarMenu.classList.toggle("show-sidebar");
+                        });
+                    })
+                    .catch(error => console.error("Fehler beim Laden der Bars:", error));
+            }
+    
+            document.addEventListener("DOMContentLoaded", loadBars);
+        </script>
+    
 </body>
 </html>

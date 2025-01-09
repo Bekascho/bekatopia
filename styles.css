@@ -52,11 +52,12 @@ header {
 }
 
 .menu-icon {
-    display: none;
+    display: none; /* Nur auf kleinen Bildschirmen sichtbar */
     font-size: 24px;
     cursor: pointer;
 }
 
+/* Navigation in der Topbar */
 #topbar-nav {
     display: flex;
     list-style-type: none;
@@ -97,10 +98,30 @@ header {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Hamburger-Menü nur auf kleinen Bildschirmen */
+/* Hamburger-Menü und mobile Ansicht */
 @media (max-width: 768px) {
+    .hamburger-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: whitesmoke;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+
     .menu-icon {
-        display: block;
+        display: block; /* Buttons nur auf kleinen Bildschirmen sichtbar */
+        font-size: 24px;
+        cursor: pointer;
+        padding: 8px;
+        background-color: lightgray;
+        border-radius: 5px;
+    }
+
+    .menu-icon:hover {
+        background-color: darkgray;
     }
 
     .sidebar {
@@ -126,6 +147,11 @@ header {
 
     #topbar-nav.show-topbar {
         display: flex;
+    }
+
+    /* Platz für den Hauptinhalt unterhalb der Hamburger-Buttons */
+    .main-content {
+        margin-top: 60px;
     }
 }
 
