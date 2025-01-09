@@ -7,21 +7,8 @@
     <title>Topbar</title>
 </head>
 <body>
-    <div id="topbar">
-        <nav class="topbar">
-            <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
-            <ul id="navbar">
-                <li><a href="index.html" class="button startseite">Startseite</a></li>
-                <li><a href="bekatopia-vision.html" class="button vision">Bekatopia als Vision</a></li>
-                <li><a href="geschichten.html" class="button virtuell">Geschichten aus Bekatopia</a></li>
-                <li><a href="zas.html" class="button zas">ZAS</a></li>
-                <li><a href="impressum.html" class="button impressum">Impressum</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Sidebar -->
     <aside class="sidebar" id="sidebar-menu">
+        <span class="menu-icon sidebar-icon" onclick="toggleSidebarMenu()">&#9776; Sidebar</span>
         <ul>
             <li><a href="ueber-bekatopia.html" class="button ueber-bekatopia">Über Bekatopia</a></li>
             <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
@@ -32,24 +19,13 @@
             <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback und Mitwirkung</a></li>
         </ul>
     </aside>
-
-    <!-- JavaScript für das Hamburger-Menü -->
+    
     <script>
-        function toggleMenu() {
-            var navbar = document.getElementById("navbar");
-            navbar.classList.toggle("show");
-        }
-
-        function toggleSidebar() {
+        function toggleSidebarMenu() {
             var sidebarMenu = document.getElementById("sidebar-menu");
-            if (sidebarMenu.classList.contains("show")) {
-                sidebarMenu.style.display = "none";
-                sidebarMenu.classList.remove("show");
-            } else {
-                sidebarMenu.style.display = "block";
-                sidebarMenu.classList.add("show");
-            }
+            sidebarMenu.classList.toggle("show-sidebar");
         }
     </script>
+    
 </body>
 </html>
