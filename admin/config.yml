@@ -1,6 +1,5 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: test-repo
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -8,7 +7,7 @@ public_folder: "/images/uploads"
 collections:
   - name: "pages"
     label: "Seiten"
-    folder: "content/pages"     # Ordner für Seiten (muss existieren)
+    folder: "content/pages"
     create: true
     extension: "md"
     fields:

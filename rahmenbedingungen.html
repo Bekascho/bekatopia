@@ -2,45 +2,44 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
-    <title>Bekatopia - Die Rahmenbedingungen</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Dein CSS-Link hier -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Bekatopia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Topbar --><header style="top: 0%; left: 0%;">
-    <div id="topbar"></div>
-    <script>
-        fetch('topbar.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('topbar').innerHTML = data);
-    </script>
-
-</header>
-
+    <header>
+        <div class="mobile-warning">
+            Diese Seite ist im Querformat besser nutzbar. Hilfe beim Design ist gern gesehen!
+        </div>
+    <!-- Topbar mit Vision und Simulation -->
+    <div class="topbar">
+        <a href="bekatopia-vision.html" class="vision">Vision</a>
+        <a href="zas.html" class="simulation">Simulation</a>
+    </div>
+    
+    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="ueber-bekatopia.html" class="button ueber-bekatopia">Über Bekatopia</a></li>
+            <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
+            <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
+            <li><a href="deepgame-tool.html" class="button deepgame-tool">DeepGame: Das Tool hinter Bekatopia</a></li>
+            <li><a href="szenarien-und-tests.html" class="button szenarien-und-tests">Aktuelle Szenarien und Tests</a></li>
+            <ul>
+                <li><a href="rahmenbedingungen.html" class="active">Rahmenbedingungen</a></li>
+                <li><a href="gemeinschaftsgarten.html">Gemeinschaftsgarten</a></li>
+                <li><a href="einheitslohn.html">Einheitslohn</a></li>
+                <li><a href="skaterpark.html">Skaterpark</a></li>
+            </ul>
+            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Kooperationen</a></li>
+            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback</a></li>
+        </ul>
+    </div>
 <!-- Hauptbereich -->
 <main class="main-content">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <ul>
-            <li><a href="ueber-bekatopia.html">Über Bekatopia</a></li>
-            <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
-            <li><a href="ueber-mich.html">Über mich</a></li>
-            <li><a href="deepgame-tool.html">DeepGame - Das Tool</a></li>
-            <li>
-                <a href="szenarien-und-tests.html">Aktuelle Szenarien und Tests</a>
-                <ul>
-                    <li><a href="rahmenbedingungen.html" class="active">Rahmenbedingungen</a></li>
-                    <li><a href="gemeinschaftsgarten.html">Gemeinschaftsgarten</a></li>
-                    <li><a href="einheitslohn.html">Einheitslohn</a></li>
-                    <li><a href="skaterpark.html">Skaterpark</a></li>
-                </ul>
-            </li>
-            <li><a href="mentoren-und-kooperationen.html">Mentoren und Kooperationen</a></li>
-            <li><a href="feedback-und-mitwirkung.html">Feedback und Mitwirkung</a></li>
-        </ul>
-    </aside>
+    
     <!-- Inhalt der Startseite -->
     <section class="content">
         <h1>Die Rahmenbedingungen</h1>
@@ -78,12 +77,6 @@
 
     </section>
 </main>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
-</footer>
-
 </body>
 </html>
 

@@ -2,26 +2,36 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Bekatopia</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="mobile-hint">
-        Die Seite ist für große Bildschirme optimiert. Falls Du weißt, wie ich das Design für kleine Bildschirme (oder insgesamt) verbessern kann, freue ich mich über Hinweise! 
-        <button onclick="hideHint()">Verstanden</button>
+    <header>
+        <div class="mobile-warning">
+            Diese Seite ist im Querformat besser nutzbar. Hilfe beim Design ist gern gesehen!
+        </div>
+    <!-- Topbar mit Vision und Simulation -->
+    <div class="topbar">
+        <a href="bekatopia-vision.html" class="vision">Vision</a>
+        <a href="zas.html" class="simulation">Simulation</a>
     </div>
-
-<!-- Platzhalter für Topbar und Sidebar -->
-<div id="bars"></div>
-
-<!-- Hamburger-Buttons für Topbar und Sidebar -->
-<div class="hamburger-buttons">
-    <span class="menu-icon topbar-icon">&#9776; Menü</span>
-    <span class="menu-icon sidebar-icon">&#9776; Sidebar</span>
-</div>
-    <!-- Hauptbereich -->
+    
+    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="ueber-bekatopia.html" class="button ueber-bekatopia">Über Bekatopia</a></li>
+            <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
+            <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
+            <li><a href="deepgame-tool.html" class="button deepgame-tool">DeepGame</a></li>
+            <li><a href="szenarien-und-tests.html" class="button Szenarien">Szenarien und Tests</a></li>
+            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Kooperationen</a></li>
+            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback</a></li>
+        </ul>
+    </div>
+        <!-- Hauptbereich -->
     <main class="main-content">
 
         <!-- Inhalt der Startseite -->
@@ -45,38 +55,13 @@
                 und Zweifel, ob wir es schaffen, aber ich habe auch Hoffnung. Denn ich habe schon fliegende Hummeln gesehen, aber noch nie kotzende Pferde!</p>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
-    </footer>
     
-        <!-- JavaScript zum Laden der Topbar und Sidebar -->
-        <script>
-            function loadBars() {
-                fetch('bars.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('bars').innerHTML = data;
-                        console.log("Topbar und Sidebar wurden geladen.");
-        
-                        // Event-Listener für den Topbar-Hamburger
-                        document.querySelector(".topbar-icon").addEventListener("click", function() {
-                            var topbarNav = document.getElementById("topbar-nav");
-                            topbarNav.classList.toggle("show-topbar");
-                        });
-        
-                        // Event-Listener für den Sidebar-Hamburger
-                        document.querySelector(".sidebar-icon").addEventListener("click", function() {
-                            var sidebarMenu = document.getElementById("sidebar-menu");
-                            sidebarMenu.classList.toggle("show-sidebar");
-                        });
-                    })
-                    .catch(error => console.error("Fehler beim Laden der Bars:", error));
-            }
-        
-            document.addEventListener("DOMContentLoaded", loadBars);
-        </script>
-    
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
+

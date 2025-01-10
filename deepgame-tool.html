@@ -2,38 +2,38 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
-    <title>Bekatopia</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Dein CSS-Link hier -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Bekatopia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Topbar --><header style="top: 0%; left: 0%;">
-    <div id="topbar"></div>
-    <script>
-        fetch('topbar.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('topbar').innerHTML = data);
-    </script>
-
-</header>
-
-<!-- Hauptbereich -->
-<main class="main-content">
+    <header>
+        <div class="mobile-warning">
+            Diese Seite ist im Querformat besser nutzbar. Hilfe beim Design ist gern gesehen!
+        </div>
+    <!-- Topbar mit Vision und Simulation -->
+    <div class="topbar">
+        <a href="bekatopia-vision.html" class="vision">Vision</a>
+        <a href="zas.html" class="simulation">Simulation</a>
+    </div>
+    
+    </header>
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <div class="sidebar">
         <ul>
-            <li><a href="ueber-bekatopia.html" class="button bekatopia">Über Bekatopia</a></li>
+            <li><a href="ueber-bekatopia.html" class="button ueber-bekatopia">Über Bekatopia</a></li>
             <li><a href="leitfaden.html" class="button leitfaden">Leitfaden</a></li>
             <li><a href="ueber-mich.html" class="button ueber-mich">Über mich</a></li>
-            <li><a href="deepgame-tool.html" class="active">DeepGame: Das Tool hinter Bekatopia</a></li>
-            <li><a href="szenarien-und-tests.html" class="button Szenarien">Aktuelle Szenarien und Tests</a></li>
-            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Mentoren und Kooperationen</a></li>
-            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback und Mitwirkung</a></li>
+            <li><a href="deepgame-tool.html" class="button active">DeepGame</a></li>
+            <li><a href="szenarien-und-tests.html" class="button Szenarien">Szenarien und Tests</a></li>
+            <li><a href="mentoren-und-kooperationen.html" class="button Mentoren">Kooperationen</a></li>
+            <li><a href="feedback-und-mitwirkung.html" class="button Feedback">Feedback</a></li>
         </ul>
-    </aside>
-
+    </div>
+<!-- Hauptbereich -->
+<main class="main-content">
+    
     <!-- Inhalt der Startseite -->
     <section class="content">
         <h1>DeepGame - Das Tool hinter Bekatopia</h1>
@@ -68,10 +68,6 @@ DeepGame kombiniert die Flexibilität eines textbasierten Spiels mit der analyti
 </section>
 </main>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Bekatopia - Alle Rechte vorbehalten</p>
-</footer>
 
 </body>
 </html>
