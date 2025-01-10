@@ -11,10 +11,11 @@ collections:
     folder: ""                      # Root-Verzeichnis verwenden
     create: true                    # Erlaubt das Erstellen neuer Seiten
     extension: "html"               # Dateiendung der Seiten (HTML)
+    format: "html"                  # Format explizit als HTML angeben
     fields:                         # Felder, die im Editor angezeigt werden
       - label: "Titel"
         name: "title"
         widget: "string"
       - label: "Inhalt"
         name: "body"
-        widget: "markdown"
+        widget: "text"              # Text-Widget verwenden für HTML-Inhalt
