@@ -11,11 +11,12 @@
 
   <!-- Bootstrap-Script nach dem DOM-Ready-Event einbinden -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      console.log("DOM vollständig geladen und bereit!");
-      var bootstrapScript = document.createElement("script");
-      document.body.appendChild(bootstrapScript);
-    });
-  </script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const netlifyScript = document.createElement("script");
+    netlifyScript.src = "https://unpkg.com/netlify-cms@2.10.0/dist/netlify-cms.js";
+    document.body.appendChild(netlifyScript);
+  });
+</script>
+
 </body>
 </html>
