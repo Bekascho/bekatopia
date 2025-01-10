@@ -2,34 +2,41 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
-    <title>Bekatopia - die Vision</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Dein CSS-Link hier -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
+    <title>Bekatopia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Topbar --><header style="top: 0%; left: 0%;">
-    <div id="topbar"></div>
-    <script>
-        fetch('topbar.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('topbar').innerHTML = data);
-    </script>
-
-</header>
+    <header>
+        <div class="mobile-warning">
+            Diese Seite ist im Querformat besser nutzbar. Hilfe beim Design ist gern gesehen!
+        </div>
+    <!-- Topbar mit Vision und Simulation -->
+    <div class="topbar">
+        <a href="bekatopia-vision.html" class="vision">Vision</a>
+        <a href="zas.html" class="simulation">Simulation</a>
+    </div>
+    
+    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="zas.html">Zurück zur ZAS-Startseite</a></li>
+            <li><a href="geschichten.html" class="active">Geschichten</a></li>
+            <li><a href="mitteilung.html">Bekanntmachungen</a></li>
+            <li><a href="projekte.html">Projektübersicht - in Planung</a></li>
+            <li><a href="Steuern.html">Steuern- und Spendenverteilung - in Planung</a></li>
+            <li><a href="forum.html">Das Forum - in Planung</a></li>
+            <li><a href="ben.html">BEN - in Planung</a></li>
+            <li><a href="rundumblick.html">Rundum-Blick - in Planung</a></li>
+            <li><a href="FAQ.html">FAQ - in Planung</a></li>
+        </ul>
+    </div>
 
 <!-- Hauptbereich -->
 <main class="main-content">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <ul>
-            <li><a href="index.html" class="button bekatopia">Zurück zur Hauptseite</a></li>
-            <li><a href="geschichten2.html" class="button ueber-mich">Fortsetzung - in Arbeit</a></li>
-        </ul>
-    </aside>
-
+    
     <!-- Inhalt der Hauptseite -->
     <section class="virtuell">
         <h1>Geschichten aus Bekatopia</h1>
