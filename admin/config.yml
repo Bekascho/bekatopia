@@ -2,19 +2,19 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"      # Ordner für hochgeladene Bilder
-public_folder: "/images/uploads"    # Öffentlicher Pfad zu den Bildern
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"                   # Interner Name der Sammlung
-    label: "Seiten"                 # Anzeige im Dashboard
-    folder: ""                      # Root-Verzeichnis verwenden
-    create: true                    # Erlaubt das Erstellen neuer Seiten
-    extension: "html"               # Dateiendung der Seiten (HTML)
-    fields:                         # Felder, die im Editor angezeigt werden
+  - name: "pages"
+    label: "Seiten"
+    folder: "content/pages"     # Ordner für Seiten (muss existieren)
+    create: true
+    extension: "md"
+    fields:
       - label: "Titel"
         name: "title"
         widget: "string"
       - label: "Inhalt"
         name: "body"
-        widget: "text"              # Text-Widget für den gesamten HTML-Inhalt
+        widget: "markdown"
