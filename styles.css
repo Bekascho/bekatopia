@@ -112,6 +112,13 @@ header {
     margin-left: 23%;
 }
 
+.main-content-vision {
+    background-color: #93c5fd;
+    display: flex;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 23%;
+}
 /* Chat-Nachrichten Container */
 .chat-container {
     display: flex;
