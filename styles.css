@@ -8,12 +8,21 @@ body {
 
 /* Links */
 a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #f7f8f9;
+    background-color: #1e40af;
 }
 
 a:hover {
     color: #d1d5db;
+}
+
+.mobile-warning {
+    display: block;
+    background-color: #ffcc00;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
 }
 
 header {
@@ -67,8 +76,8 @@ header {
     left: 0;
     width: 20%;
     height: calc(100vh - 60px); /* Höhe der Sidebar passend zum Viewport minus Headerhöhe */
-    background-color: #3b82f6;
-    color: whitesmoke;
+    background-color: #2165d2;
+    color: white;
     overflow-y: auto; /* Scrollen nur in vertikaler Richtung erlauben */
     padding: 15px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -119,6 +128,16 @@ header {
     margin-top: 70px;
     margin-left: 23%;
 }
+
+.main-content-simulation {
+    background-color: #1e40af;
+    color: #c3cbe3;
+    display: flex;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 23%;
+}
+
 /* Chat-Nachrichten Container */
 .chat-container {
     display: flex;
