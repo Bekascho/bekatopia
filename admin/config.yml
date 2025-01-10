@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # oder der Branch, den du für dein Projekt nutzt
+  branch: main
 
 media_folder: "images/uploads" # Ordner für hochgeladene Bilder
 public_folder: "/images/uploads"
@@ -11,5 +11,9 @@ collections:
     folder: ""
     create: true
     fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Inhalt", name: "body", widget: "markdown" }
+      - label: "Titel"
+        name: "title"
+        widget: "string"
+      - label: "Inhalt"
+        name: "body"
+        widget: "markdown"
