@@ -13,7 +13,7 @@ Bekatopia ist eine Kombination aus Vision und virtueller Simulation. Sie basiert
 
 ## Online-Zugriff
 Diese Website ist gehostet über GitHub Pages und erreichbar unter:  
-`https://<dein-github-username>.github.io/bekatopia/`
+`https://bekascho.github.io/bekatopia/`
 
 ## Mitwirken
 Hast du Ideen oder Anregungen? Lass uns zusammenarbeiten! Vor allem im Bereich Web-Design benötige ich offensichtlich Hilfe.
