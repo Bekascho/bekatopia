@@ -1,0 +1,10 @@
+{
+  "logbuch": [
+    {
+      "datum": "2024-01-31",
+      "spieler": "Beka",
+      "aktion": "Hat das offizielle Logbuch-System für Bekatopia eingerichtet.",
+      "details": "Beka hat eine Datei in ihrem GitHub-Repository erstellt, damit ich alle Spieleraktionen automatisch speichern kann."
+    }
+  ]
+}
