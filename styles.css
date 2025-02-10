@@ -75,10 +75,10 @@ header {
     top: 60px; /* Abstand unterhalb des fixierten Headers */
     left: 0;
     width: 20%;
-    height: calc(100vh - 60px); /* Höhe der Sidebar passend zum Viewport minus Headerhöhe */
+    height: calc(90vh - 60px); /* Höhe der Sidebar passend zum Viewport minus Headerhöhe */
     background-color: #2165d2;
     color: white;
-    overflow-y: auto; /* Scrollen nur in vertikaler Richtung erlauben */
+    overflow-y: scroll; /* Scrollen in vertikaler Richtung erzwingen */
     padding: 15px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
